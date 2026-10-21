@@ -6,6 +6,10 @@ curl -fsSL https://raw.githubusercontent.com/progineousgb/who-is-eating-my-serve
 
 The server is slow and you want to know why, now. This takes a 2 second sample and tells you in plain words what is using the CPU, RAM, disk I/O, disk space and network, with the top offenders by process name and, where it can tell, the systemd service or Docker container they belong to. Read-only.
 
+## Platform
+
+Linux only. The script targets Linux servers (Debian, Ubuntu, and similar) and needs bash and root. It does not run on macOS or Windows; from those systems, run it on the server over SSH.
+
 ## Example output
 
 Real run on a test VM while a `dd` was writing a 4 GB file in the background.
